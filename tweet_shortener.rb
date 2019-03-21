@@ -29,4 +29,4 @@ def word_substituter(tweet_str)
   tweet_arr.join(" ")
 end
 
-word_substituter(test_tweet)
+puts word_substituter(test_tweet)
