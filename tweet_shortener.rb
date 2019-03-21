@@ -20,7 +20,7 @@ def word_substituter(tweet_str)
   counter = 0
   tweet_arr.each do |word|
     dictionary.each do |key, value|
-      if word == key
+      if word.downcase == key
         tweet_arr[counter] = value
       end
     end
