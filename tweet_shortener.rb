@@ -35,12 +35,11 @@ def bulk_tweet_shortener(tweet_arr)
   end
 end
 
-def selective_tweet_shortener(tweet_arr)
-  tweet_arr.each do |tweet|
+def selective_tweet_shortener(tweet_str)
     if tweet.length > 140
-      word_substituter(tweet)
+      word_substituter(tweet_str)
     else
-      tweet
+      tweet_str
     end
   end
 end
