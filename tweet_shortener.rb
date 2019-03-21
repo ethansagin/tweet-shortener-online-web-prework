@@ -17,7 +17,7 @@ def word_substituter(tweet_str)
   tweet_arr = tweet_str.split(" ")
   counter = 0
   tweet_arr.each do |word|
-    diction_hash.each do |key, value|
+    dictionary.each do |key, value|
       if word == key
         tweet_arr[counter] = value
       end
