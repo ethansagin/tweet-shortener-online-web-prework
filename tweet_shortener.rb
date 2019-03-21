@@ -14,7 +14,11 @@ def dictionary
 end
 
 def word_substituter(tweet_str)
-  tweet_str.split(" ")
+  tweet_arr = tweet_str.split(" ")
+  tweet_arr.each do |word|
+    diction_hash.each do |key, value|
+      if word == key
+        index = 
   
   
 end
