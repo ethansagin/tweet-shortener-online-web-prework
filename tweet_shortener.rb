@@ -13,6 +13,8 @@ def dictionary
   }
 end
 
+test_tweet = "I'm running out of example tweets for you guys, which is weird, because I'm a writer and this is just writing and I tweet all day. For real, you guys. For real."
+
 def word_substituter(tweet_str)
   tweet_arr = tweet_str.split(" ")
   counter = 0
@@ -27,3 +29,4 @@ def word_substituter(tweet_str)
   tweet_arr.join(" ")
 end
 
+word_substituter(test_tweet)
